@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200,6 +204,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -311,6 +319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeB (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -377,6 +389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeB (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -398,6 +414,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -465,6 +485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockCrystals (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -530,6 +554,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -640,6 +668,10 @@ PrefabInstance:
     - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
       propertyPath: m_Name
       value: rockLargeA (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -756,6 +788,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -959,6 +995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeA (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -980,7 +1020,7 @@ GameObject:
   - component: {fileID: 980484790}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1084,6 +1124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeB (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1149,6 +1193,10 @@ PrefabInstance:
     - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
       propertyPath: m_Name
       value: rockLargeA (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1216,6 +1264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeB (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1281,6 +1333,10 @@ PrefabInstance:
     - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
       propertyPath: m_Name
       value: rockLargeB (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1348,6 +1404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeA (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1369,6 +1429,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -1480,6 +1544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeB (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1546,6 +1614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeA (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1611,6 +1683,10 @@ PrefabInstance:
     - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
       propertyPath: m_Name
       value: rockLargeA (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1690,6 +1766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: caff5ba2c3c70254c81805cd5265cc84, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1714,6 +1794,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -1825,6 +1909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeA (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1846,6 +1934,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -1957,6 +2049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeB (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2004,6 +2100,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -2115,6 +2215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rockLargeB
       objectReference: {fileID: 0}
+    - target: {fileID: 7819385218569032578, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2136,6 +2240,10 @@ PrefabInstance:
     - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_Name
       value: rockCrystals
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956711988859686700, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7764456577471255958, guid: 4c711021153211b4fad644cc5f8bf46f, type: 3}
       propertyPath: m_RootOrder
@@ -2270,7 +2378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8029222059038321221, guid: 76ba00461b5ae334fba5c2339561ae1e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3789997
+      value: 2.47
       objectReference: {fileID: 0}
     - target: {fileID: 8029222059038321221, guid: 76ba00461b5ae334fba5c2339561ae1e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2331,7 +2439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8730985949748053546, guid: 75df24f9cdb5ccc42adae2bb49bebd5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.42
+      value: 1.98
       objectReference: {fileID: 0}
     - target: {fileID: 8730985949748053546, guid: 75df24f9cdb5ccc42adae2bb49bebd5a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2490,6 +2598,10 @@ PrefabInstance:
     - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
       propertyPath: m_Name
       value: rockLargeA
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224429219109661200, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
