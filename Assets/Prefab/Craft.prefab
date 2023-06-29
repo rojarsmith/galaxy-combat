@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1743116758812805644}
   m_Layer: 0
   m_Name: Craft
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0ae5da6cc1c5e41a2b7778322aa386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _reCalTransform: {fileID: 0}
   _moveSpeed: 15
   _rotationSpeed: 10
   laserPrefab: {fileID: 977064755349250903, guid: 75df24f9cdb5ccc42adae2bb49bebd5a, type: 3}

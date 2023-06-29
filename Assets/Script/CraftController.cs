@@ -38,6 +38,12 @@ public class CraftController : MonoBehaviour
         }
     }
 
+    public void Movement(float dirV, float dirH)
+    {
+        _rigidBody.velocity = transform.forward * dirV * _moveSpeed;
+        _transForm.Rotate(transform.up, dirH * Time.deltaTime * _rotationSpeed, Space.World);
+    }
+
     public void ShootLaser()
     {
         for (int i = 0; i < shootPosArray.Length; i++)
