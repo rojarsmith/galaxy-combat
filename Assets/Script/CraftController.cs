@@ -48,6 +48,9 @@ public class CraftController : MonoBehaviour
 
     void ShootLaser()
     {
-        Instantiate(laserPrefab, transform.position, transform.rotation);
+        for (int i = 0; i < shootPosArray.Length; i++)
+        {
+            Instantiate(laserPrefab, shootPosArray[i].position, shootPosArray[i].rotation);
+        }
     }
 }

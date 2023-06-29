@@ -5,12 +5,12 @@ using UnityEngine;
 public class LaserController : MonoBehaviour
 {
     public float _moveSpeed = 5f;
-    public float lifeTime = 1.5f;
+    public float _lifeTime = 1.5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, lifeTime);
+        Destroy(gameObject, _lifeTime);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class LaserController : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
-            Destroy(gameObject, lifeTime);
+            Destroy(gameObject, _lifeTime);
         }
     }
 }
