@@ -147,4 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 5
-  lifeTime: 1.5
+  _lifeTime: 1.5
+  _isPlayerLaser: 1

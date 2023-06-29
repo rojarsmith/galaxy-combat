@@ -7,6 +7,8 @@ public class LaserController : MonoBehaviour
     public float _moveSpeed = 5f;
     public float _lifeTime = 1.5f;
 
+    public bool _isPlayerLaser;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,17 @@ public class LaserController : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
-            Destroy(gameObject, _lifeTime);
+            Destroy(gameObject);
+        }
+        if (_isPlayerLaser && other.CompareTag("Enemy"))
+        {
+            other.GetComponent<CraftController>().UnderAttack(1);
+            Destroy(gameObject);
+        }
+        if (!_isPlayerLaser && other.CompareTag("Player"))
+        {
+            other.GetComponent<CraftController>().UnderAttack(1);
+            Destroy(gameObject);
         }
     }
 }

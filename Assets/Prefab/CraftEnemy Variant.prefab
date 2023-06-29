@@ -81,9 +81,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: -5857886671465511977, guid: e7fe3ca26d19a714a9ae70b7be3333d0, type: 3}
+    - target: {fileID: 1743116758812805644, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
+      propertyPath: laserPrefab
+      value: 
+      objectReference: {fileID: 2001863973736550200, guid: 76ba00461b5ae334fba5c2339561ae1e, type: 3}
     - target: {fileID: 5247932486546808634, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
       propertyPath: m_Name
       value: CraftEnemy Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5247932486546808634, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7598589747839010310, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
       propertyPath: m_RootOrder

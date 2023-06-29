@@ -15,7 +15,7 @@ public class CraftController : MonoBehaviour
     public float _shootTime = 0.5f;
     float _timer;
     float _shootCoolDownTime;
-
+    public int _healthPoint = 10;
 
     void Awake()
     {
@@ -64,6 +64,15 @@ public class CraftController : MonoBehaviour
         for (int i = 0; i < shootPosArray.Length; i++)
         {
             Instantiate(laserPrefab, shootPosArray[i].position, shootPosArray[i].rotation);
+        }
+    }
+
+    public void UnderAttack(int value)
+    {
+        _healthPoint -= value;
+        if (_healthPoint <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
