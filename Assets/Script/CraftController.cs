@@ -10,6 +10,9 @@ public class CraftController : MonoBehaviour
     public float _moveSpeed = 15;
     public float _rotationSpeed = 10;
 
+    public GameObject laserPrefab;
+    public Transform[] shootPosArray;
+
     void Awake()
     {
         _transForm = GetComponent<Transform>();
@@ -27,6 +30,10 @@ public class CraftController : MonoBehaviour
         Vector3 moveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDir = _reCalTransform.TransformDirection(moveDir);
         Movement(moveDir);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ShootLaser();
+        }
     }
 
     void Movement(Vector3 dir)
@@ -37,5 +44,10 @@ public class CraftController : MonoBehaviour
             Quaternion rotationValue = Quaternion.LookRotation(dir);
             _transForm.rotation = Quaternion.Slerp(_transForm.rotation, rotationValue, Time.deltaTime * _rotationSpeed);
         }
+    }
+
+    void ShootLaser()
+    {
+        Instantiate(laserPrefab, transform.position, transform.rotation);
     }
 }
