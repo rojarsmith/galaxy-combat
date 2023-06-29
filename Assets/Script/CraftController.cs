@@ -12,6 +12,11 @@ public class CraftController : MonoBehaviour
     public GameObject laserPrefab;
     public Transform[] shootPosArray;
 
+    public float _shootTime = 0.5f;
+    float _timer;
+    float _shootCoolDownTime;
+
+
     void Awake()
     {
         _transForm = GetComponent<Transform>();
@@ -26,6 +31,7 @@ public class CraftController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        _timer += Time.deltaTime;
     }
 
     public void Movement(Vector3 dir)
@@ -45,6 +51,15 @@ public class CraftController : MonoBehaviour
     }
 
     public void ShootLaser()
+    {
+        if (_timer >= _shootCoolDownTime)
+        {
+            _shootCoolDownTime = _timer + _shootTime;
+            CreateLaser();
+        }
+    }
+
+    public void CreateLaser()
     {
         for (int i = 0; i < shootPosArray.Length; i++)
         {
