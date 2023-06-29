@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7598589747839010310}
   - component: {fileID: 8373364839096871875}
   - component: {fileID: 1125427377405918611}
+  - component: {fileID: 1743116758812805644}
   m_Layer: 0
   m_Name: Craft
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   - {fileID: 6152168769702753637}
   - {fileID: 7495297136096904754}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &8373364839096871875
 MeshCollider:
@@ -85,6 +86,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &1743116758812805644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5247932486546808634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0ae5da6cc1c5e41a2b7778322aa386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _reCalTransform: {fileID: 0}
+  _moveSpeed: 15
+  _rotationSpeed: 10
+  laserPrefab: {fileID: 977064755349250903, guid: 75df24f9cdb5ccc42adae2bb49bebd5a, type: 3}
+  shootPosArray:
+  - {fileID: 6152168769702753637}
+  - {fileID: 7495297136096904754}
 --- !u!1 &5391762262785071122
 GameObject:
   m_ObjectHideFlags: 0

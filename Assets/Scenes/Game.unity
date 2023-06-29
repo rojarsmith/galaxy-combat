@@ -782,7 +782,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5247932486546808634, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
   m_PrefabInstance: {fileID: 6380794347726856000}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &747011986
+--- !u!114 &747011989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -791,16 +791,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 747011984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c0ae5da6cc1c5e41a2b7778322aa386, type: 3}
+  m_Script: {fileID: 11500000, guid: 94f0079f937ced14386e1728682cbbdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _reCalTransform: {fileID: 1384798632}
-  _moveSpeed: 15
-  _rotationSpeed: 10
-  laserPrefab: {fileID: 977064755349250903, guid: 75df24f9cdb5ccc42adae2bb49bebd5a, type: 3}
-  shootPosArray:
-  - {fileID: 1253579848}
-  - {fileID: 1337649003}
 --- !u!1001 &960956441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1232,11 +1226,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3597249458217136298, guid: 2ac2b0ac90b615442b8c266d0518ced3, type: 3}
   m_PrefabInstance: {fileID: 1185377052}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1253579848 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6152168769702753637, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
-  m_PrefabInstance: {fileID: 6380794347726856000}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1328040054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1306,11 +1295,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7480436933065115960, guid: 6303e534a9cc0494099c77e83d446798, type: 3}
   m_PrefabInstance: {fileID: 1328040054}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1337649003 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7495297136096904754, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
-  m_PrefabInstance: {fileID: 6380794347726856000}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1367535213
 PrefabInstance:
@@ -2372,6 +2356,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1743116758812805644, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
+      propertyPath: _reCalTransform
+      value: 
+      objectReference: {fileID: 1384798632}
     - target: {fileID: 5247932486546808634, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
       propertyPath: m_Name
       value: Craft
@@ -2426,7 +2414,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5247932486546808634, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 747011986}
+      addedObject: {fileID: 747011989}
   m_SourcePrefab: {fileID: 100100000, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
 --- !u!1001 &7354477314127139335
 PrefabInstance:
@@ -2436,6 +2424,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1757289705188561816, guid: ab5dd97d1cf02234b8a29877899043bd, type: 3}
+      propertyPath: _reCalTransform
+      value: 
+      objectReference: {fileID: 1384798632}
     - target: {fileID: 5226295509919762094, guid: ab5dd97d1cf02234b8a29877899043bd, type: 3}
       propertyPath: m_Name
       value: CraftEnemy
