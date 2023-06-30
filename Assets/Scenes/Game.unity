@@ -975,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2c36b8ab09db24f8b652e4c61ac836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _offsetPos: {x: 0, y: 0, z: 0}
+  _offsetPos: {x: 11, y: 18, z: -8}
   _target: {fileID: 747011993}
 --- !u!1001 &972517923
 PrefabInstance:
