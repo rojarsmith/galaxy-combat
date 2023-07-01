@@ -16,6 +16,7 @@ public class CraftController : MonoBehaviour
     float _timer;
     float _shootCoolDownTime;
     public int _healthPoint = 10;
+    bool isAlive = true;
 
     void Awake()
     {
@@ -70,9 +71,23 @@ public class CraftController : MonoBehaviour
     public void UnderAttack(int value)
     {
         _healthPoint -= value;
-        if (_healthPoint <= 0)
+        if (isAlive && _healthPoint <= 0)
         {
-            Destroy(gameObject);
+            Dead();
         }
+    }
+
+    void Dead()
+    {
+        isAlive = false;
+        if (gameObject.CompareTag("Player"))
+        {
+            GameManager._singleton.GameFail();
+        }
+        if (gameObject.CompareTag("Enemy"))
+        {
+            GameManager._singleton.GetScore();
+        }
+        Destroy(gameObject);
     }
 }

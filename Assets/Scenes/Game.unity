@@ -469,7 +469,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 861517e663eb9124b8ff4e5f1d776587, type: 3}
-    m_FontSize: 38
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1716,7 +1716,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 968205214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1384798633}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ResetGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &968205214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2114,7 +2126,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1179126175}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1384798633}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1179126175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2442,6 +2466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1384798632}
+  - component: {fileID: 1384798633}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2464,6 +2489,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1384798633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384798631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219e4ecd5a7fc834eaaeaf261a30a475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentScore: 0
+  _quitScore: 3
+  _panelGameOver: {fileID: 1645599883}
+  _panelText: {fileID: 661641469}
+  _scoreText: {fileID: 1618773453}
 --- !u!1001 &1412167135
 PrefabInstance:
   m_ObjectHideFlags: 0
