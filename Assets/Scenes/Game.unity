@@ -886,6 +886,7 @@ GameObject:
   - component: {fileID: 589378825}
   - component: {fileID: 589378827}
   - component: {fileID: 589378826}
+  - component: {fileID: 589378828}
   m_Layer: 5
   m_Name: ShootButton
   m_TagString: Untagged
@@ -951,6 +952,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589378824}
   m_CullTransparentMesh: 1
+--- !u!114 &589378828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589378824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 747011997}
+          m_TargetAssemblyTypeName: PlayerMobileInput, Assembly-CSharp
+          m_MethodName: OnPressShoot
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 747011997}
+          m_TargetAssemblyTypeName: PlayerMobileInput, Assembly-CSharp
+          m_MethodName: OnPressShoot
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &661641467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +1491,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747011984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94f0079f937ced14386e1728682cbbdd, type: 3}
   m_Name: 
@@ -1456,6 +1502,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7598589747839010310, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
   m_PrefabInstance: {fileID: 6380794347726856000}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &747011997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747011984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c431b90623064d04a83ea1cfe5953691, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _joystickCtr: {fileID: 999774507}
+  _reCalTransform: {fileID: 1384798632}
 --- !u!1001 &960956441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1907,6 +1967,8 @@ GameObject:
   - component: {fileID: 999774503}
   - component: {fileID: 999774505}
   - component: {fileID: 999774504}
+  - component: {fileID: 999774507}
+  - component: {fileID: 999774506}
   m_Layer: 5
   m_Name: Joystick
   m_TagString: Untagged
@@ -1973,6 +2035,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999774502}
   m_CullTransparentMesh: 1
+--- !u!114 &999774506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999774502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 999774507}
+          m_TargetAssemblyTypeName: JoystickController, Assembly-CSharp
+          m_MethodName: OnDrag
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 999774507}
+          m_TargetAssemblyTypeName: JoystickController, Assembly-CSharp
+          m_MethodName: OnEndDrag
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &999774507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999774502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9e9a12d9defd84a825c2135c2ae1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rectTrans: {fileID: 0}
+  _startPos: {x: 0, y: 0, z: 0}
+  _joystickX: 0
+  _joystickY: 0
 --- !u!1001 &1148518794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3795,6 +3918,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5247932486546808634, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 747011989}
+    - targetCorrespondingSourceObject: {fileID: 5247932486546808634, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 747011997}
   m_SourcePrefab: {fileID: 100100000, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}
 --- !u!1001 &7354477314127139335
 PrefabInstance:
