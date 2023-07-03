@@ -71,6 +71,10 @@ public class CraftController : MonoBehaviour
     public void UnderAttack(int value)
     {
         _healthPoint -= value;
+        if (gameObject.CompareTag("Player"))
+        {
+            GameManager._singleton.UpdateHealthPoint(_healthPoint);
+        }
         if (isAlive && _healthPoint <= 0)
         {
             Dead();

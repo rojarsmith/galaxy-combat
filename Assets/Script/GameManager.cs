@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public Text _panelText;
     public Text _scoreText;
 
+    public Slider _healthPointBar;
+
     private void Awake()
     {
         if (_singleton == null)
@@ -24,6 +26,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _panelGameOver.SetActive(false);
+
+        _healthPointBar.maxValue = GameObject.FindGameObjectWithTag("Player").GetComponent<CraftController>()._healthPoint;
+        _healthPointBar.value = _healthPointBar.maxValue;
     }
 
     // Update is called once per frame
@@ -57,5 +62,10 @@ public class GameManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void UpdateHealthPoint(int value)
+    {
+        _healthPointBar.value = value;
     }
 }
