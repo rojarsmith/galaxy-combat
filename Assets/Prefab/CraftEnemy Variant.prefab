@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6379192c5b3af52479d66b94ddfbbfbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootDis: 50
+  shootDis: 7
 --- !u!4 &7575181859290144658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7598589747839010310, guid: 96e5a7a459da6bb4da479399be302f90, type: 3}

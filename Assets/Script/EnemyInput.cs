@@ -6,7 +6,7 @@ public class EnemyInput : MonoBehaviour
 {
     CraftController _controller;
     SightTrigger _sightTrigger;
-    public float shootDis = 50;
+    public float shootDis = 7;
 
     private void Awake()
     {
@@ -27,7 +27,8 @@ public class EnemyInput : MonoBehaviour
         float turnValue = 0;
         if (_sightTrigger._target)
         {
-            turnValue = _sightTrigger._targetAngle * 0.0055f;
+            turnValue = _sightTrigger._targetAngle * 0.055f * 2;
+            Debug.Log(_sightTrigger._targetDis);
             if (_sightTrigger._targetDis > shootDis)
             {
                 forwardValue = 1;
