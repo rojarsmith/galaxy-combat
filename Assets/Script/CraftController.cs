@@ -17,6 +17,7 @@ public class CraftController : MonoBehaviour
     float _shootCoolDownTime;
     public int _healthPoint = 10;
     bool isAlive = true;
+    public GameObject _destoryEffect;
 
     void Awake()
     {
@@ -92,6 +93,7 @@ public class CraftController : MonoBehaviour
         {
             GameManager._singleton.GetScore();
         }
+        Instantiate(_destoryEffect, _transForm.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

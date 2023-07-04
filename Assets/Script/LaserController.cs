@@ -9,6 +9,8 @@ public class LaserController : MonoBehaviour
 
     public bool _isPlayerLaser;
 
+    public GameObject _breakParticle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,17 +27,23 @@ public class LaserController : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
-            Destroy(gameObject);
+            DestroyLaser();
         }
         if (_isPlayerLaser && other.CompareTag("Enemy"))
         {
             other.GetComponent<CraftController>().UnderAttack(1);
-            Destroy(gameObject);
+            DestroyLaser();
         }
         if (!_isPlayerLaser && other.CompareTag("Player"))
         {
             other.GetComponent<CraftController>().UnderAttack(1);
-            Destroy(gameObject);
+            DestroyLaser();
         }
+    }
+
+    void DestroyLaser()
+    {
+        Instantiate(_breakParticle, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
