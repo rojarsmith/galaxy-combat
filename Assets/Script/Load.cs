@@ -1,24 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ObjectFollow : MonoBehaviour
+public class Load : MonoBehaviour
 {
-    public Vector3 _offsetPos = new Vector3(4, 12, -4);
-    public Transform _target;
-
     // Start is called before the first frame update
     void Start()
     {
-
+        SceneManager.LoadSceneAsync("Game");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_target)
-        {
-            transform.position = _target.position + _offsetPos;
-        }
+
     }
 }
