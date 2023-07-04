@@ -18,11 +18,15 @@ public class CraftController : MonoBehaviour
     public int _healthPoint = 10;
     bool isAlive = true;
     public GameObject _destoryEffect;
+    public AudioSource _audioSource;
+    public AudioClip[] _laserSound;
 
     void Awake()
     {
         _transForm = GetComponent<Transform>();
         _rigidBody = GetComponent<Rigidbody>();
+
+        _audioSource = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -63,6 +67,9 @@ public class CraftController : MonoBehaviour
 
     public void CreateLaser()
     {
+        int number = Random.Range(0, _laserSound.Length);
+        _audioSource.PlayOneShot(_laserSound[number]);
+
         for (int i = 0; i < shootPosArray.Length; i++)
         {
             Instantiate(laserPrefab, shootPosArray[i].position, shootPosArray[i].rotation);
